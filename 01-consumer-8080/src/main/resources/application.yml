@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+logging:
+  pattern:
+    console: level-%level %msg%n
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+    com.example.demo: debug
+
+spring:
+  application:
+    name: abcmsc-consumer-depart
+
+eureka:
+#  instance:
+#    instance-id: 01-abc-msc-consumer-8080
+  client:
+    service-url:
+      defaultZone: http://eureka1.com:8000/eureka,http://eureka2.com:8100/eureka,http://eureka3.com:8200/eureka

@@ -1,0 +1,16 @@
+server:
+  port: 8100
+
+eureka:
+  server:
+    # 设置自我保护机制的阈值，默认是0.85
+    renewal-percent-threshold: 0.75
+    # 关闭自我保护机制，默认为true
+    enable-self-preservation: false
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8000/eureka,http://localhost:8100/eureka,http://localhost:8200/eureka
