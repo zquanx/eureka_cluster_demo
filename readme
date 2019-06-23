@@ -1,1 +1,5 @@
-Eureka集群搭建DEMO
+Eureka集群搭建Demo
+
+00- eureka server
+01- 服务提供者
+02- 服务消费者
