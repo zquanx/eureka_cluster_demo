@@ -8,6 +8,7 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: none
+    # 自动映射实体类，生成数据库表
     generate-ddl: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
