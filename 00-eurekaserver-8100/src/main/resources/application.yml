@@ -8,9 +8,9 @@ eureka:
     # 关闭自我保护机制，默认为true
     enable-self-preservation: false
   instance:
-    hostname: localhost
+    hostname: eureka2.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8000/eureka,http://localhost:8100/eureka,http://localhost:8200/eureka
+      defaultZone: http://eureka1.com:8000/eureka,http://eureka2.com:8100/eureka,http://eureka3.com:8200/eureka
